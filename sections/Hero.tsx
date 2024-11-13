@@ -54,7 +54,7 @@ export default function HeroFlats({
   cta = { id: "change-me-1", href: "/", text: "Change me" },
 }: Props) {
   return (
-    <div class="lg:container lg:px-0 px-4 flex gap-8 items-center justify-between pt-9 lg:pt-16 pb-10 lg:pb-20 w-full">
+    <div class="default-container">
       <div class="flex flex-col items-center gap-8">
         <div
           class={`flex w-full xl:container xl:mx-auto mx-5 md:mx-10 z-10 ${
@@ -92,7 +92,7 @@ export default function HeroFlats({
             </div>
           </div>
           {image && (
-            <div class="w-full lg:max-w-[50%] flex justify-end">
+            <div class="w-full lg:max-w-[50%] flex justify-center lg:justify-end">
               <Image
                 width={555}
                 class="w-full object-fit max-w-[555px]"

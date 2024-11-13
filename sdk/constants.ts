@@ -1,0 +1,1 @@
+export const CONTAINER = "lg:container xl:px-0 px-4 flex gap-8 items-center justify-between pt-9 lg:pt-16 pb-10 lg:pb-20 w-full"

@@ -2778,6 +2778,9 @@ input.tab:checked + .tab-content,
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-\[10px\] {
+  margin-top: 10px;
+}
 .mt-\[5px\] {
   margin-top: 5px;
 }
@@ -2825,6 +2828,9 @@ input.tab:checked + .tab-content,
 }
 .h-\[3px\] {
   height: 3px;
+}
+.h-\[68px\] {
+  height: 68px;
 }
 .h-full {
   height: 100%;
@@ -2911,6 +2917,9 @@ input.tab:checked + .tab-content,
 .w-\[522px\] {
   width: 522px;
 }
+.w-\[68px\] {
+  width: 68px;
+}
 .w-full {
   width: 100%;
 }
@@ -2989,6 +2998,9 @@ input.tab:checked + .tab-content,
 }
 .max-w-\[80vw\] {
   max-width: 80vw;
+}
+.max-w-\[879px\] {
+  max-width: 879px;
 }
 .max-w-full {
   max-width: 100%;
@@ -3185,6 +3197,9 @@ input.tab:checked + .tab-content,
 .rounded-2xl {
   border-radius: 1rem;
 }
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
 .rounded-\[16px\] {
   border-radius: 16px;
 }
@@ -3368,6 +3383,10 @@ input.tab:checked + .tab-content,
   padding-left: 15rem;
   padding-right: 15rem;
 }
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -3375,6 +3394,10 @@ input.tab:checked + .tab-content,
 .px-\[12px\] {
   padding-left: 12px;
   padding-right: 12px;
+}
+.px-\[18px\] {
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .py-1 {
   padding-top: 0.25rem;
@@ -3403,9 +3426,6 @@ input.tab:checked + .tab-content,
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
@@ -3458,9 +3478,6 @@ input.tab:checked + .tab-content,
 .pt-8 {
   padding-top: 2rem;
 }
-.pt-9 {
-  padding-top: 2.25rem;
-}
 .text-left {
   text-align: left;
 }
@@ -3487,6 +3504,9 @@ input.tab:checked + .tab-content,
 }
 .text-\[15px\] {
   font-size: 15px;
+}
+.text-\[20px\] {
+  font-size: 20px;
 }
 .text-\[24px\] {
   font-size: 24px;
@@ -3598,6 +3618,10 @@ input.tab:checked + .tab-content,
   --tw-text-opacity: 1;
   color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity)));
 }
+.text-base-100 {
+  --tw-text-opacity: 1;
+  color: var(--fallback-b1,oklch(var(--b1)/var(--tw-text-opacity)));
+}
 .text-base-200 {
   --tw-text-opacity: 1;
   color: var(--fallback-b2,oklch(var(--b2)/var(--tw-text-opacity)));
@@ -3613,6 +3637,10 @@ input.tab:checked + .tab-content,
 .text-primary {
   --tw-text-opacity: 1;
   color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
+}
+.text-primary-content {
+  --tw-text-opacity: 1;
+  color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
 }
 .text-secondary {
   --tw-text-opacity: 1;
@@ -3656,6 +3684,50 @@ input.tab:checked + .tab-content,
   transition-duration: 150ms;
 }
 /** Remove scrollbar from overflow-auto */
+
+.default-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+
+  .default-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  @media (min-width: 1140px) {
+
+    .default-container {
+      max-width: 1140px;
+    }
+  }
+
+  .default-container {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .default-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 @media (min-width: 768px) {
 
   .md\:btn-sm {
@@ -3679,6 +3751,7 @@ input.tab:checked + .tab-content,
     padding: 0px;
   }
 }
+
 @media (min-width: 1024px) {
 
   .lg\:container {
@@ -3696,6 +3769,7 @@ input.tab:checked + .tab-content,
     }
   }
 }
+
 @media (min-width: 1280px) {
 
   .xl\:container {
@@ -3713,37 +3787,47 @@ input.tab:checked + .tab-content,
     }
   }
 }
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
 .disabled\:hidden:disabled {
   display: none;
 }
+
 .group:first-child .group-first\:font-bold {
   font-weight: 700;
 }
+
 .group[open] .group-open\:rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
 .group[open] .group-open\:border-b-\[4px\] {
   border-bottom-width: 4px;
 }
+
 .group[open] .group-open\:border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
+
 .group[open] .group-open\:font-semibold {
   font-weight: 600;
 }
+
 .group:disabled .group-disabled\:bg-\[\#0D1717\] {
   --tw-bg-opacity: 1;
   background-color: rgb(13 23 23 / var(--tw-bg-opacity));
 }
+
 @media (min-width: 640px) {
 
   .sm\:h-\[273px\] {
@@ -3790,6 +3874,7 @@ input.tab:checked + .tab-content,
     line-height: 28px;
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:mx-10 {
@@ -3841,6 +3926,7 @@ input.tab:checked + .tab-content,
     line-height: 1.25rem;
   }
 }
+
 @media (min-width: 1024px) {
 
   .lg\:mx-auto {
@@ -3888,6 +3974,10 @@ input.tab:checked + .tab-content,
     max-width: 586px;
   }
 
+  .lg\:flex-1 {
+    flex: 1 1 0%;
+  }
+
   .lg\:flex-\[100px\] {
     flex: 100px;
   }
@@ -3908,6 +3998,10 @@ input.tab:checked + .tab-content,
     align-items: center;
   }
 
+  .lg\:justify-end {
+    justify-content: flex-end;
+  }
+
   .lg\:justify-center {
     justify-content: center;
   }
@@ -3922,11 +4016,6 @@ input.tab:checked + .tab-content,
 
   .lg\:gap-6 {
     gap: 1.5rem;
-  }
-
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .lg\:px-12 {
@@ -3958,24 +4047,25 @@ input.tab:checked + .tab-content,
     padding-bottom: 4rem;
   }
 
-  .lg\:pb-20 {
-    padding-bottom: 5rem;
-  }
-
   .lg\:pb-28 {
     padding-bottom: 7rem;
-  }
-
-  .lg\:pt-16 {
-    padding-top: 4rem;
   }
 
   .lg\:pt-28 {
     padding-top: 7rem;
   }
 
+  .lg\:text-\[40px\] {
+    font-size: 40px;
+  }
+
   .lg\:text-\[64px\] {
     font-size: 64px;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:text-lg {
@@ -3987,11 +4077,21 @@ input.tab:checked + .tab-content,
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .lg\:leading-normal {
+    line-height: 1.5;
+  }
 }
+
 @media (min-width: 1280px) {
 
   .xl\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }

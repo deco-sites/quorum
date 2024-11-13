@@ -6,18 +6,40 @@
       "__resolveType": "Header"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Hero.tsx",
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a98a8a47-047d-4dab-afc9-aec7e09f9720/HERO-IMAGE.svg",
-        "headline": "Transforme a maneira de cuidar",
-        "title": "Monitoramento de pacientes em tempo real",
-        "description": "Simplifique o acompanhamento de pacientes e a organização de escalas, tudo em tempo real com a nossa IA integrada ao WhatsApp",
-        "cta": {
-          "text": "Veja como funciona",
-          "href": "#"
-        }
+      "__resolveType": "site/sections/Hero.tsx",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a98a8a47-047d-4dab-afc9-aec7e09f9720/HERO-IMAGE.svg",
+      "headline": "Transforme a maneira de cuidar",
+      "title": "Monitoramento de pacientes em tempo real",
+      "description": "Simplifique o acompanhamento de pacientes e a organização de escalas, tudo em tempo real com a nossa IA integrada ao WhatsApp",
+      "cta": {
+        "text": "Veja como funciona",
+        "href": "#"
       }
+    },
+    {
+      "__resolveType": "site/sections/Features.tsx",
+      "label": "Engajamento e Inteligência",
+      "title": "Revolucione o cuidado domiciliar e assuma o protagonismo no futuro do setor",
+      "cards": [
+        {
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/e51bfd84-dd0e-4efe-b0cb-c9d488958d79/Vector-(2).svg",
+          "title": "Digitalize e Automatize",
+          "description": "Automatize a gestão de escalas e lembretes de plantão, garantindo que os profissionais estejam sempre informados e organizados, permitindo um cuidado mais eficiente e sem falhas"
+        },
+        {
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/c4ef3fdb-3fc7-4abc-b797-dd34dd8340cb/Group-197.svg",
+          "width": 32,
+          "title": "Monitore em Tempo Real",
+          "description": "Monitore a saúde dos pacientes em tempo real via WhatsApp, com IA integrada que transforma dados em alertas de saúde, ajudando a tomar decisões rápidas e proativas."
+        },
+        {
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/75b200a5-4035-48e6-ad87-5a83c36489a9/Vector-(3).svg",
+          "width": 34,
+          "height": 23,
+          "title": "Gerencie com Transparência",
+          "description": "Centralize as informações em um dashboard intuitivo, com total transparência para operadoras, gestores e familiares sobre o cuidado e o bem-estar dos pacientes"
+        }
+      ]
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

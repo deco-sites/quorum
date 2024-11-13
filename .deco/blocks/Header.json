@@ -1,1 +1,26 @@
-{"__resolveType":"site/sections/Header.tsx","navigation":{"links":[],"buttons":[]}}
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "navigation": {
+    "links": [
+      {
+        "label": "Home"
+      },
+      {
+        "label": "Dashboard"
+      },
+      {
+        "label": "Geria"
+      },
+      {
+        "label": "Experimente"
+      },
+      {
+        "label": "Depoimentos"
+      }
+    ],
+    "buttons": []
+  },
+  "logo": {
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/01c27184-1e86-442f-b399-26127b0aa401/LOGOCOMPLETA-SEMFUNDO.png"
+  }
+}

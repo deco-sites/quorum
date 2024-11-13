@@ -7,6 +7,13 @@ export default {
   theme: {
     container: { center: true },
     extend: {
+      container: {
+        center: true,
+        padding: "1rem",
+        screens: {
+          "xl": "1140px",
+        },
+      },
       animation: {
         sliding: "sliding 30s linear infinite",
       },

@@ -85,7 +85,7 @@ export default function Header({
           class="drawer-overlay"
         />
 
-        <div class="flex flex-col gap-8 min-h-full w-80 max-w-[80vw] bg-base-100 text-base-content">
+        <div class="flex flex-col gap-8 min-h-full w-80 max-w-[80vw] bg-neutral text-base-content">
           <a class="p-4" href="/">
             <Image src={logo.src || ""} width={98} height={23} alt={logo.alt} />
           </a>

@@ -4,6 +4,20 @@
   "sections": [
     {
       "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Hero.tsx",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a98a8a47-047d-4dab-afc9-aec7e09f9720/HERO-IMAGE.svg",
+        "headline": "Transforme a maneira de cuidar",
+        "title": "Monitoramento de pacientes em tempo real",
+        "description": "Simplifique o acompanhamento de pacientes e a organização de escalas, tudo em tempo real com a nossa IA integrada ao WhatsApp",
+        "cta": {
+          "text": "Veja como funciona",
+          "href": "#"
+        }
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

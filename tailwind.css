@@ -20,6 +20,10 @@
     -moz-appearance: textfield;
     appearance: textfield;
   }
+
+  html, body {
+    background-color: oklch(var(--n) / 1)
+  }
 }
 
 @layer components {

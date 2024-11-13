@@ -3,24 +3,41 @@ import Image from "apps/website/components/Image.tsx";
 
 export interface CTA {
   id?: string;
+  /**
+   * @title Link
+   */
   href: string;
+  /**
+   * @title Texto
+   */
   text: string;
-  outline?: boolean;
 }
 
 export interface Props {
   /**
-   * @format rich-text
-   * @default Click here to tweak this text however you want.
+   * @title Chamada
+   */
+  headline: string;
+  /**
+   * @title Titulo
    */
   title?: string;
   /**
-   * @default This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.
+   * @title Descrição
    */
   description?: string;
+  /**
+   * @title Imagem
+   */
   image?: ImageWidget;
+  /**
+   * @title Posição da imagem
+   */
   placement?: "left" | "right";
-  cta?: CTA[];
+  /**
+   * @title Botão - (CTA)
+   */
+  cta?: CTA;
 }
 
 const PLACEMENT = {
@@ -29,68 +46,67 @@ const PLACEMENT = {
 };
 
 export default function HeroFlats({
+  headline = "Place here your headline",
   title = "Click here to tweak this text however you want.",
   description = "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
   image,
-  placement = "left",
-  cta = [
-    { id: "change-me-1", href: "/", text: "Change me", outline: false },
-    { id: "change-me-2", href: "/", text: "Change me", outline: true },
-  ],
+  placement = "right",
+  cta = { id: "change-me-1", href: "/", text: "Change me" },
 }: Props) {
   return (
-    <nav class="lg:container lg:mx-auto mx-4">
+    <div class="lg:container lg:px-0 px-4 flex gap-8 items-center justify-between pt-9 lg:pt-16 pb-10 lg:pb-20 w-full">
       <div class="flex flex-col items-center gap-8">
         <div
-          class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
+          class={`flex w-full xl:container xl:mx-auto mx-5 md:mx-10 z-10 ${
             image
               ? PLACEMENT[placement]
               : "flex-col items-center justify-center text-center"
-          } lg:py-36 gap-12 md:gap-20 items-center`}
+          } gap-2 lg:gap-5 justify-between items-center`}
         >
-          {image && (
-            <Image
-              width={640}
-              class="w-full lg:w-1/2 object-fit"
-              sizes="(max-width: 640px) 100vw, 30vw"
-              src={image}
-              alt={image}
-              decoding="async"
-              loading="lazy"
-            />
-          )}
           <div
-            class={`mx-6 lg:mx-auto lg:w-full space-y-4 gap-4 ${
+            class={`w-full gap-4 ${
               image
-                ? "lg:w-1/2 lg:max-w-xl"
-                : "flex flex-col items-center justify-center lg:max-w-3xl"
+                ? "lg:max-w-[50%] flex flex-col"
+                : "flex flex-col items-center justify-center lg:max-w-[586px]"
             }`}
           >
-            <div
-              class="inline-block lg:text-[80px] text-4xl leading-none font-medium"
-              dangerouslySetInnerHTML={{
-                __html: title ?? "",
-              }}
-            ></div>
-            <p class="text-lg md:text-md leading-[150%]">{description}</p>
+            <p class="text-warning font-semibold pb-4">{headline}</p>
+            <h1 class="text-[40px] lg:text-[64px] font-bold text-primary pb-5">
+              {title}
+            </h1>
+            <p class="leading-[150%] text-base-200 text-sm lg:text-xl pb-6">
+              {description}
+            </p>
             <div class="flex items-center gap-3">
-              {cta?.map((item) => (
+              {cta && (
                 <a
-                  key={item?.id}
-                  id={item?.id}
-                  href={item?.href}
-                  target={item?.href.includes("http") ? "_blank" : "_self"}
-                  class={`font-normal btn btn-primary ${
-                    item.outline && "btn-outline"
-                  }`}
+                  key={cta?.id}
+                  id={cta?.id}
+                  href={cta?.href}
+                  target={cta?.href.includes("http") ? "_blank" : "_self"}
+                  class={`bg-accent text-base-300 rounded-full font-semibold text-xs lg:text-lg py-3 px-6 lg:py-5 lg:px-12`}
                 >
-                  {item?.text}
+                  {cta?.text}
                 </a>
-              ))}
+              )}
             </div>
           </div>
+          {image && (
+            <div class="w-full lg:max-w-[50%] flex justify-end">
+              <Image
+                width={555}
+                class="w-full object-fit max-w-[555px]"
+                sizes="(max-width: 640px) 100vw, 30vw"
+                src={image}
+                alt={image}
+                decoding="async"
+                loading="lazy"
+                fit="contain"
+              />
+            </div>
+          )}
         </div>
       </div>
-    </nav>
+    </div>
   );
 }

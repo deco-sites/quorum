@@ -40,6 +40,20 @@
           "description": "Centralize as informações em um dashboard intuitivo, com total transparência para operadoras, gestores e familiares sobre o cuidado e o bem-estar dos pacientes"
         }
       ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ImageWithDescription.tsx",
+        "placement": "left",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/d50888cb-263f-4cb4-b498-7e52bb90be1b/IMAGEM-2.svg",
+        "title": "Nossa solução é desenvolvida para operações de assistências extra-hospitalares que buscam tecnologia de ponta e um diferencial competitivo no mercado",
+        "description": "Se você quer otimizar a eficiência operacional e elevar a qualidade dos cuidados, estamos aqui para fazer a diferença ",
+        "cta": {
+          "text": "Agendar Reunião",
+          "href": "#"
+        }
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

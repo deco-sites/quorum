@@ -2960,6 +2960,9 @@ input.tab:checked + .tab-content,
 .max-w-\[300px\] {
   max-width: 300px;
 }
+.max-w-\[308px\] {
+  max-width: 308px;
+}
 .max-w-\[310px\] {
   max-width: 310px;
 }
@@ -3861,6 +3864,10 @@ input.tab:checked + .tab-content,
     max-width: 488px;
   }
 
+  .sm\:max-w-\[879px\] {
+    max-width: 879px;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -4073,6 +4080,10 @@ input.tab:checked + .tab-content,
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-\[32px\] {
+    font-size: 32px;
   }
 
   .lg\:text-\[40px\] {

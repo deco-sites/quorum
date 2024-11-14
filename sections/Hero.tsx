@@ -64,7 +64,7 @@ export default function HeroFlats({
           } gap-2 lg:gap-5 justify-between items-center`}
         >
           <div
-            class={`w-full gap-4 ${
+            class={`w-full ${
               image
                 ? "lg:max-w-[50%] flex flex-col"
                 : "flex flex-col items-center justify-center lg:max-w-[586px]"

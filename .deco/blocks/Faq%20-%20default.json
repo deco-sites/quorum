@@ -1,1 +1,20 @@
-{"title":"FAQs","__resolveType":"site/sections/Faq.tsx"}
+{
+  "title": "FAQ",
+  "__resolveType": "site/sections/Faq.tsx",
+  "questions": [
+    {
+      "title": "O que é a tal tal tal?",
+      "answer": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+    },
+    {
+      "title": "O que é a tal tal tal?",
+      "answer": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+    },
+    {
+      "title": "O que é a tal tal tal?",
+      "answer": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+    }
+  ],
+  "headline": "Perguntas Frequentes",
+  "description": "Caso a sua dúvida não tenha sido respondida nesta página, entre em contato com minha equipe de suporte através do e-mail "
+}

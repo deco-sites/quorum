@@ -15,10 +15,6 @@ export interface CTA {
 
 export interface Props {
   /**
-   * @title Chamada
-   */
-  headline: string;
-  /**
    * @title Titulo
    */
   title?: string;
@@ -45,8 +41,7 @@ const PLACEMENT = {
   right: "flex-col text-left lg:flex-row",
 };
 
-export default function HeroFlats({
-  headline = "Place here your headline",
+export default function ImageWithDescription({
   title = "Click here to tweak this text however you want.",
   description = "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
   image,
@@ -61,20 +56,19 @@ export default function HeroFlats({
             image
               ? PLACEMENT[placement]
               : "flex-col items-center justify-center text-center"
-          } gap-2 lg:gap-5 justify-between items-center`}
+          } gap-10 lg:gap-14 justify-between items-center`}
         >
           <div
             class={`w-full ${
               image
-                ? "lg:max-w-[50%] flex flex-col"
-                : "flex flex-col items-center justify-center lg:max-w-[586px]"
+                ? "flex flex-col"
+                : "flex flex-col items-center justify-center"
             }`}
           >
-            <p class="text-warning font-semibold pb-4">{headline}</p>
-            <h1 class="text-[40px] lg:text-[64px] font-bold text-primary pb-5">
+            <h1 class="text-xl lg:text-2xl font-semibold text-primary pb-4">
               {title}
             </h1>
-            <p class="leading-[150%] text-base-200 text-sm lg:text-xl pb-6">
+            <p class="leading-[150%] text-base-200 text-sm lg:text-lg pb-5 lg:pb-12">
               {description}
             </p>
             <div class="flex items-center gap-3">
@@ -92,10 +86,10 @@ export default function HeroFlats({
             </div>
           </div>
           {image && (
-            <div class="w-full lg:max-w-[50%] flex justify-center lg:justify-end">
+            <div class="w-full lg:max-w-[485px] flex justify-center lg:justify-end">
               <Image
-                width={555}
-                class="w-full object-fit max-w-[555px]"
+                width={485}
+                class="w-full object-fit max-w-[485px]"
                 sizes="(max-width: 640px) 100vw, 30vw"
                 src={image}
                 alt={image}

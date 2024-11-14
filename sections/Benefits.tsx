@@ -22,7 +22,7 @@ export interface Props {
 
 export default function Benefits({ cards, title }: Props) {
   return (
-    <div class="default-container">
+    <div class="default-container !justify-center">
       <div class="flex flex-col gap-10">
         <div class="flex flex-col items-center">
           <h3 class="text-2xl font-bold text-center lg:text-[32px] text-primary lg:leading-normal max-w-[308px] sm:max-w-[879px]">

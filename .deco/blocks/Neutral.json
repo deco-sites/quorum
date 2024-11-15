@@ -68,6 +68,7 @@
     "base-300": "#FEFCFE",
     "base-content": "#545454",
     "primary-content": "#000000",
-    "secondary-content": "#DBDBDB"
+    "secondary-content": "#DBDBDB",
+    "tertiary-content": "#DFE4F0"
   }
 }

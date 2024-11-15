@@ -2735,6 +2735,10 @@ input.tab:checked + .tab-content,
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -2742,6 +2746,9 @@ input.tab:checked + .tab-content,
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+.-mb-\[20\%\] {
+  margin-bottom: -20%;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -2919,6 +2926,10 @@ input.tab:checked + .tab-content,
 }
 .w-\[68px\] {
   width: 68px;
+}
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .w-full {
   width: 100%;
@@ -3314,6 +3325,10 @@ input.tab:checked + .tab-content,
   --tw-bg-opacity: 1;
   background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
 }
+.bg-accent-content {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-ac,oklch(var(--ac)/var(--tw-bg-opacity)));
+}
 .bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
@@ -3510,6 +3525,9 @@ input.tab:checked + .tab-content,
 .pt-4 {
   padding-top: 1rem;
 }
+.pt-\[120px\] {
+  padding-top: 120px;
+}
 .text-left {
   text-align: left;
 }
@@ -3581,6 +3599,9 @@ input.tab:checked + .tab-content,
 }
 .font-bold {
   font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
 }
 .font-extralight {
   font-weight: 200;
@@ -3849,6 +3870,16 @@ input.tab:checked + .tab-content,
   }
 }
 
+.hover\:bg-blue-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -3893,8 +3924,30 @@ input.tab:checked + .tab-content,
   background-color: rgb(13 23 23 / var(--tw-bg-opacity));
 }
 
+.group:has(input:checked) .group-has-\[input\:checked\]\:block {
+  display: block;
+}
+
 .group:has(input[data-id=plus]:checked) .group-has-\[input\[data-id\=plus\]\:checked\]\:block {
   display: block;
+}
+
+.group:has(input:checked) .group-has-\[input\:checked\]\:hidden {
+  display: none;
+}
+
+.group:has(input:checked) .group-has-\[input\:checked\]\:bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
+}
+
+.group:has(input:checked) .group-has-\[input\:checked\]\:text-base-100 {
+  --tw-text-opacity: 1;
+  color: var(--fallback-b1,oklch(var(--b1)/var(--tw-text-opacity)));
+}
+
+.group:has(input:checked) .group-has-\[input\:checked\]\:opacity-100 {
+  opacity: 1;
 }
 
 @media (min-width: 640px) {

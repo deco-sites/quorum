@@ -75,6 +75,67 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "title": "O que falam de nós",
+      "slides": [
+        {
+          "content": {
+            "name": "Alejandro Nicolas",
+            "position": "Ingenieria,Argentina",
+            "headline": "All your crypto in one place",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled .",
+            "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a2be6436-59f9-4643-b583-53997a9ecb38/Mask-Group-(1).svg"
+          }
+        },
+        {
+          "content": {
+            "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/fd93ba10-1e2c-4eb7-89e1-d9bc2c070ebe/Mask-Group.svg",
+            "name": "Hector Colombo",
+            "position": "Ingenieria,Argentina",
+            "headline": "At home or on the go",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ."
+          }
+        },
+        {
+          "content": {
+            "name": "Alejandro Nicolas",
+            "position": "Ingenieria,Argentina",
+            "headline": "All your crypto in one place",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled .",
+            "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a2be6436-59f9-4643-b583-53997a9ecb38/Mask-Group-(1).svg"
+          }
+        },
+        {
+          "content": {
+            "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/fd93ba10-1e2c-4eb7-89e1-d9bc2c070ebe/Mask-Group.svg",
+            "name": "Hector Colombo",
+            "position": "Ingenieria,Argentina",
+            "headline": "At home or on the go",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ."
+          }
+        },
+        {
+          "content": {
+            "name": "Alejandro Nicolas",
+            "position": "Ingenieria,Argentina",
+            "headline": "All your crypto in one place",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled .",
+            "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a2be6436-59f9-4643-b583-53997a9ecb38/Mask-Group-(1).svg"
+          }
+        },
+        {
+          "content": {
+            "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/fd93ba10-1e2c-4eb7-89e1-d9bc2c070ebe/Mask-Group.svg",
+            "name": "Hector Colombo",
+            "position": "Ingenieria,Argentina",
+            "headline": "At home or on the go",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ."
+          }
+        }
+      ],
+      "dots": true
+    },
+    {
       "__resolveType": "Faq - default"
     },
     {

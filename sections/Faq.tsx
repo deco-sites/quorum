@@ -1,4 +1,17 @@
+import { useScript } from "@deco/deco/hooks";
 import Icon from "site/components/ui/Icon.tsx";
+
+const onClick = (index: number) => {
+  console.log(event);
+
+  const input = document.getElementById(`plus-${index}`) as HTMLInputElement;
+
+  if (input && input.checked) {
+    input.checked = false;
+  } else {
+    input.checked = true;
+  }
+};
 
 export interface CTA {
   id?: string;
@@ -68,7 +81,7 @@ export default function BlogPosts({
           <div class="flex flex-col gap-[10px] flex-grow max-w-[418px]">
             {questions?.map((question, index) => (
               <div class="group bg-secondary text-secondary-content py-3 px-4 rounded-lg w-full transition-all duration-200">
-                <label class="w-full">
+                <div class="w-full" hx-on:click={useScript(onClick, index)}>
                   <input
                     type="radio"
                     name="faq"
@@ -86,7 +99,7 @@ export default function BlogPosts({
                       strokeWidth={4}
                     />
                   </div>
-                </label>
+                </div>
                 <div
                   class="hidden group-has-[input[data-id=plus]:checked]:block text-xs px-4 pt-4 text-secondary-content"
                   dangerouslySetInnerHTML={{ __html: question.answer ?? "" }}

@@ -17,9 +17,50 @@
       }
     },
     {
+      "__resolveType": "site/sections/Geria.tsx",
+      "items": [
+        {
+          "label": "Geria",
+          "labelColor": "#2C4A99",
+          "title": "Conheça a Geria",
+          "description": "A Geria é a nossa assistente digital para o cuidado domiciliar, integrada aos mais avançados modelos de inteligência artificial e disponível via WhatsApp para otimizar o plantão",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/1ae0732f-33ac-4610-a5f2-942b1a19c780/Geria.svg"
+        },
+        {
+          "label": "Bloco de notas",
+          "labelColor": "#FABD07",
+          "title": "Digitalize o diário de plantão",
+          "description": "A profissional pode registrar qualquer informação do plantão pelo WhatsApp, incluindo áudios, que são analisados pela nossa IA e convertidos em sugestões práticas",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/628328f3-d724-4b3a-b80b-2bbdfb65dba8/Bloco-de-notas.svg",
+          "labelTextColor": "#000000"
+        },
+        {
+          "label": "Confirmação de plantão",
+          "labelColor": "#1D2A4C",
+          "title": "Automatize a gestão de escala",
+          "description": "Nossos lembretes permitem que as profissionais atualizem a presença no plantão, garantindo que você seja informado sobre realocações antecipadamente, sem a necessidade de intervenções manuais",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/acdc2c65-4c3e-43dd-952f-b227aec1332d/Confirmacao-de-plantao.svg"
+        },
+        {
+          "label": "Relatório",
+          "labelColor": "#F18D19",
+          "title": "Sem áudios longos",
+          "description": "Ao final da escala, a Geria consolida todas as informações, auxilia a profissional a complementar os registros e gera um resumo  do plantão",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/9ea2649e-b652-4c2a-8b95-82a30d0f40b2/Relatorio.svg"
+        },
+        {
+          "label": "Lembretes",
+          "labelColor": "#3A8DCC",
+          "title": "Assegure a rotina do paciente",
+          "description": "Transformamos o planejamento do cuidado e a rotina do paciente em lembretes personalizados, enviados de forma programada, ajudando a profissional a seguir o plano sem preocupações",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/36e7ad4f-7597-495f-b6af-358ae8857309/Lembretes.svg"
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/Features.tsx",
-      "label": "Engajamento e Inteligência",
       "title": "Revolucione o cuidado domiciliar e assuma o protagonismo no futuro do setor",
+      "label": "Engajamento e Inteligência",
       "cards": [
         {
           "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/e51bfd84-dd0e-4efe-b0cb-c9d488958d79/Vector-(2).svg",
@@ -43,9 +84,9 @@
     },
     {
       "__resolveType": "site/sections/ImageWithDescription.tsx",
+      "title": "Nossa solução é desenvolvida para operações de assistências extra-hospitalares que buscam tecnologia de ponta e um diferencial competitivo no mercado",
       "placement": "left",
       "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/d50888cb-263f-4cb4-b498-7e52bb90be1b/IMAGEM-2.svg",
-      "title": "Nossa solução é desenvolvida para operações de assistências extra-hospitalares que buscam tecnologia de ponta e um diferencial competitivo no mercado",
       "description": "Se você quer otimizar a eficiência operacional e elevar a qualidade dos cuidados, estamos aqui para fazer a diferença ",
       "cta": {
         "text": "Agendar Reunião",

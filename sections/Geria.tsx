@@ -40,7 +40,9 @@ export default function StickyImageSection({ items = [] }: Props) {
                   key={index}
                   src={item.image}
                   alt={item.label}
-                  class="absolute inset-0 object-cover transition-opacity duration-300 opacity-0 top-0 left-0 bottom-0 my-auto"
+                  class={`absolute inset-0 object-cover transition-opacity duration-300 ${
+                    index === 0 ? "opacity-1" : "opacity-0"
+                  } top-0 left-0 bottom-0 my-auto`}
                   data-index={index}
                 />
               ))}

@@ -2735,6 +2735,10 @@ input.tab:checked + .tab-content,
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -2742,6 +2746,12 @@ input.tab:checked + .tab-content,
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+.-mb-\[30\%\] {
+  margin-bottom: -30%;
+}
+.-mt-16 {
+  margin-top: -4rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -2794,6 +2804,9 @@ input.tab:checked + .tab-content,
 .grid {
   display: grid;
 }
+.\!hidden {
+  display: none !important;
+}
 .hidden {
   display: none;
 }
@@ -2820,6 +2833,9 @@ input.tab:checked + .tab-content,
 }
 .h-\[210px\] {
   height: 210px;
+}
+.h-\[380px\] {
+  height: 380px;
 }
 .h-\[3px\] {
   height: 3px;
@@ -2872,9 +2888,6 @@ input.tab:checked + .tab-content,
 .min-h-full {
   min-height: 100%;
 }
-.min-h-screen {
-  min-height: 100vh;
-}
 .w-1\/2 {
   width: 50%;
 }
@@ -2919,6 +2932,10 @@ input.tab:checked + .tab-content,
 }
 .w-\[68px\] {
   width: 68px;
+}
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .w-full {
   width: 100%;
@@ -3186,6 +3203,9 @@ input.tab:checked + .tab-content,
 .self-start {
   align-self: flex-start;
 }
+.self-center {
+  align-self: center;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -3295,6 +3315,10 @@ input.tab:checked + .tab-content,
 .border-transparent {
   border-color: transparent;
 }
+.\!bg-base-100 {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity))) !important;
+}
 .\!bg-secondary {
   --tw-bg-opacity: 1 !important;
   background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity))) !important;
@@ -3313,6 +3337,10 @@ input.tab:checked + .tab-content,
 .bg-accent {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
+}
+.bg-accent-content {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-ac,oklch(var(--ac)/var(--tw-bg-opacity)));
 }
 .bg-base-100 {
   --tw-bg-opacity: 1;
@@ -3468,6 +3496,9 @@ input.tab:checked + .tab-content,
 .pb-12 {
   padding-bottom: 3rem;
 }
+.pb-20 {
+  padding-bottom: 5rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -3498,6 +3529,9 @@ input.tab:checked + .tab-content,
 .pt-12 {
   padding-top: 3rem;
 }
+.pt-16 {
+  padding-top: 4rem;
+}
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -3509,6 +3543,9 @@ input.tab:checked + .tab-content,
 }
 .pt-4 {
   padding-top: 1rem;
+}
+.pt-\[120px\] {
+  padding-top: 120px;
 }
 .text-left {
   text-align: left;
@@ -3581,6 +3618,9 @@ input.tab:checked + .tab-content,
 }
 .font-bold {
   font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
 }
 .font-extralight {
   font-weight: 200;
@@ -3724,6 +3764,10 @@ input.tab:checked + .tab-content,
 }
 .outline {
   outline-style: solid;
+}
+.drop-shadow-cascade {
+  --tw-drop-shadow: drop-shadow(0px 77.32px 21.83px rgba(0, 0, 0, 0.01)) drop-shadow(0px 49.26px 19.95px rgba(0, 0, 0, 0.04)) drop-shadow(0px 28.06px 16.84px rgba(0, 0, 0, 0.15)) drop-shadow(0px 12.47px 12.47px rgba(0, 0, 0, 0.26)) drop-shadow(0px 3.12px 6.86px rgba(0, 0, 0, 0.29));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -3888,13 +3932,40 @@ input.tab:checked + .tab-content,
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity))) !important;
 }
 
+.group:disabled .group-disabled\:\!bg-secondary {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity))) !important;
+}
+
 .group:disabled .group-disabled\:bg-\[\#0D1717\] {
   --tw-bg-opacity: 1;
   background-color: rgb(13 23 23 / var(--tw-bg-opacity));
 }
 
+.group:has(input:checked) .group-has-\[input\:checked\]\:block {
+  display: block;
+}
+
 .group:has(input[data-id=plus]:checked) .group-has-\[input\[data-id\=plus\]\:checked\]\:block {
   display: block;
+}
+
+.group:has(input:checked) .group-has-\[input\:checked\]\:hidden {
+  display: none;
+}
+
+.group:has(input:checked) .group-has-\[input\:checked\]\:bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
+}
+
+.group:has(input:checked) .group-has-\[input\:checked\]\:text-base-100 {
+  --tw-text-opacity: 1;
+  color: var(--fallback-b1,oklch(var(--b1)/var(--tw-text-opacity)));
+}
+
+.group:has(input:checked) .group-has-\[input\:checked\]\:opacity-100 {
+  opacity: 1;
 }
 
 @media (min-width: 640px) {
@@ -4019,6 +4090,10 @@ input.tab:checked + .tab-content,
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:\!flex {
+    display: flex !important;
   }
 
   .lg\:flex {

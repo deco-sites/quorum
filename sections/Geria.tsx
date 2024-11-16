@@ -1,6 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { useDevice } from "@deco/deco/hooks";
 
 interface ItemProps {
   label: string;
@@ -24,12 +23,10 @@ export interface Props {
 }
 
 export default function StickyImageSection({ items = [] }: Props) {
-  const device = useDevice();
-
-  if (device === "desktop")
-    return (
-      /* Desktop */
-      <section class="default-container">
+  return (
+    <>
+      {/* Desktop */}
+      <section class="default-container !hidden lg:!flex">
         <div class="flex w-full">
           <div class="w-1/2 sticky top-0 h-screen">
             <div class="relative w-full h-full flex items-center justify-center">
@@ -40,7 +37,9 @@ export default function StickyImageSection({ items = [] }: Props) {
                   key={index}
                   src={item.image}
                   alt={item.label}
-                  class="absolute inset-0 object-cover transition-opacity duration-300 opacity-0 top-0 left-0 bottom-0 my-auto"
+                  class={`absolute inset-0 object-cover transition-opacity duration-300 ${
+                    index === 0 ? "opacity-1" : "opacity-0"
+                  } top-0 left-0 bottom-0 my-auto`}
                   data-index={index}
                 />
               ))}
@@ -78,16 +77,11 @@ export default function StickyImageSection({ items = [] }: Props) {
           </div>
         </div>
       </section>
-    );
-  /* Mobile */ else
-    return (
-      <section class="default-container">
-        <div class="flex w-full flex-col">
+      {/* Mobile */}
+      <section class="default-container lg:hidden pt-16">
+        <div class="flex w-full flex-col items-center">
           {items.map((item, index) => (
-            <div
-              key={index}
-              class="min-h-screen flex flex-col justify-center p-8 gap-2"
-            >
+            <div key={index} class="flex flex-col justify-center p-8 gap-2">
               <h4
                 class="py-[9px] px-[22px] rounded-full w-min whitespace-nowrap text-[15px]"
                 style={{
@@ -107,12 +101,13 @@ export default function StickyImageSection({ items = [] }: Props) {
                 key={index}
                 src={item.image}
                 alt={item.label}
-                class="w-full"
                 data-index={index}
+                class="self-center pt-10"
               />
             </div>
           ))}
         </div>
       </section>
-    );
+    </>
+  );
 }

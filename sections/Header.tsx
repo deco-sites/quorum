@@ -2,24 +2,29 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "../components/ui/Icon.tsx";
 
-export interface CTA {
-  id?: string;
-  href: string;
-  text: string;
-  outline?: boolean;
+export interface Link {
+  /** @title Texto do Link */
+  label?: string;
+  /**
+   * @title link
+   * @description Para usar o 'Scroll to' passe o valor com um # seguido do ID da section (ex: #id-section)
+   * */
+  url?: string;
 }
 
-export interface Nav {
+interface Nav {
+  /** @title Links */
+  links: Link[];
+}
+
+export interface Props {
+  /** @title Logo */
   logo?: {
     src?: ImageWidget;
     alt?: string;
   };
-  navigation?: {
-    links: {
-      label?: string;
-      url?: string;
-    }[];
-  };
+  /** @title Navegação */
+  navigation?: Nav;
 }
 
 export default function Header({
@@ -35,7 +40,7 @@ export default function Header({
       { label: "Contact", url: "/" },
     ],
   },
-}: Nav) {
+}: Props) {
   return (
     <nav class="drawer drawer-end">
       <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />

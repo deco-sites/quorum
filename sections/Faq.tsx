@@ -13,27 +13,30 @@ const onClick = (index: number) => {
   }
 };
 
-export interface CTA {
-  id?: string;
-  href: string;
-  text: string;
-  outline?: boolean;
-}
-
 export interface Question {
+  /** @title Pergunta */
   title: string;
-  /** @format rich-text */
+  /**
+   * @title Resposta
+   * @format rich-text
+   * */
   answer: string;
 }
 
 export interface Props {
+  /** @title Titulo */
   title?: string;
+  /** @title Chamada */
   headline?: string;
+  /** @title Descrição */
   description?: string;
+  /** @title Perguntas */
   questions?: Question[];
+  /** @title ID da Seção */
+  sectionId?: string;
 }
 
-export default function BlogPosts({
+export default function FAQ({
   title = "FAQs",
   headline = "Perguntas Frequentes",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
@@ -64,9 +67,13 @@ export default function BlogPosts({
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut vestibulum ligula. Nam et tellus sit amet magna convallis interdum. Integer fermentum ligula nec velit hendrerit, quis feugiat odio feugiat. Ut vel nisi auctor, rhoncus felis vitae, tempor metus. Fusce ut lectus et ex consectetur ullamcorper. Nulla facilisi. Proin ullamcorper, odio a consectetur posuere, mauris felis rutrum lectus, et convallis est risus vitae nisi. Suspendisse potenti. Donec ultricies consectetur lorem, eget tempor nisi cursus in. Vivamus at nulla eros. Sed nec malesuada mauris. Curabitur id ex sed neque rutrum tincidunt. Sed sed lectus nec libero eleifend luctus. Aenean convallis feugiat elit, non tincidunt eros vehicula sed. Phasellus pretium urna sit amet risus interdum tempor.",
     },
   ],
+  sectionId,
 }: Props) {
   return (
-    <div class="w-full flex items-center justify-center bg-primary">
+    <div
+      class="w-full flex items-center justify-center bg-primary"
+      id={sectionId}
+    >
       <div class="default-container">
         <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-between lg:mx-[143px]">
           <div class="flex flex-col lg:w-2/5 text-secondary-content">

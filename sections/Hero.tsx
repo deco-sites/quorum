@@ -38,6 +38,8 @@ export interface Props {
    * @title Botão - (CTA)
    */
   cta?: CTA;
+  /** @title ID da Seção */
+  sectionId?: string;
 }
 
 const PLACEMENT = {
@@ -52,9 +54,10 @@ export default function HeroFlats({
   image,
   placement = "right",
   cta = { id: "change-me-1", href: "/", text: "Change me" },
+  sectionId,
 }: Props) {
   return (
-    <div class="default-container">
+    <div id={sectionId} class="default-container">
       <div class="flex flex-col items-center gap-8">
         <div
           class={`flex w-full xl:container xl:mx-auto mx-5 md:mx-10 z-10 ${

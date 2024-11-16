@@ -3,19 +3,24 @@
   "navigation": {
     "links": [
       {
-        "label": "Home"
+        "label": "Home",
+        "url": "#home"
       },
       {
-        "label": "Dashboard"
+        "label": "Dashboard",
+        "url": "#dashboard"
       },
       {
-        "label": "Geria"
+        "label": "Geria",
+        "url": "#geria"
       },
       {
-        "label": "Experimente"
+        "label": "Experimente",
+        "url": "#experimente"
       },
       {
-        "label": "Depoimentos"
+        "label": "Depoimentos",
+        "url": "#depoimentos"
       }
     ],
     "buttons": []

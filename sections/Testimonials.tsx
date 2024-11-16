@@ -50,7 +50,7 @@ function SliderItem({ slide, id }: { slide: Testimonial; id: string }) {
   return (
     <div
       id={id}
-      class="relative overflow-y-hidden w-full min-h-[292px] bg-base-100 rounded-lg p-6 flex"
+      class="relative overflow-y-hidden w-full min-h-[292px] bg-base-100 rounded-lg p-6 flex justify-center"
     >
       <div class="flex flex-col justify-center items-center gap-3 lg:gap-4 h-full max-w-[600px]">
         <div class="flex items-center gap-3 font-manrope">
@@ -85,7 +85,7 @@ function Dots({ slides }: Props) {
   return (
     <ul class="carousel col-span-full gap-3 z-10">
       {slides?.map((_, index) => (
-        <li class="carousel-item">
+        <li class="carousel-item lg:even:hidden">
           <Slider.Dot index={index}>
             <div>
               <div class="w-2 h-2 rounded-full !bg-secondary border border-base-100 group-disabled:!bg-base-100 group-disabled:border-none dot" />
@@ -112,7 +112,7 @@ function Carousel(props: Props) {
             {title}
           </h2>
           <Slider
-            class="carousel carousel-center w-full col-span-full row-span-full gap-[38px] z-30"
+            class="carousel carousel-end w-full col-span-full row-span-full gap-[38px] z-30"
             rootId={id}
             interval={interval && interval * 1e3}
             infinite
@@ -120,7 +120,7 @@ function Carousel(props: Props) {
             {slides?.map((slide, index) => (
               <Slider.Item
                 index={index}
-                class="carousel-item lg:w-[calc(50%-19px)] max-w-[498px] w-full"
+                class="carousel-item  lg:w-[calc(50%-19px)] lg:max-w-[498px] w-full"
               >
                 <SliderItem slide={slide} id={`${id}::${index}`} />
               </Slider.Item>

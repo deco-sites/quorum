@@ -2906,9 +2906,6 @@ input.tab:checked + .tab-content,
 .max-w-\[485px\] {
   max-width: 485px;
 }
-.max-w-\[498px\] {
-  max-width: 498px;
-}
 .max-w-\[522px\] {
   max-width: 522px;
 }
@@ -3905,6 +3902,10 @@ input.tab:checked + .tab-content,
     max-width: 485px;
   }
 
+  .lg\:max-w-\[498px\] {
+    max-width: 498px;
+  }
+
   .lg\:max-w-\[50\%\] {
     max-width: 50%;
   }
@@ -4056,6 +4057,10 @@ input.tab:checked + .tab-content,
 
   .lg\:leading-normal {
     line-height: 1.5;
+  }
+
+  .lg\:even\:hidden:nth-child(even) {
+    display: none;
   }
 }
 

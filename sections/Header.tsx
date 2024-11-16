@@ -95,6 +95,13 @@ export default function Header({
               <li class="group">
                 <a
                   href={link.url}
+                  hx-on:click={`
+                  const input = document.getElementById('mobile-drawer-nav')
+
+                  if(input){
+                    input.checked = false
+                  }
+                `}
                   aria-label={link.label}
                   class="link no-underline hover:underline p-4 text-secondary group-first:font-bold text-lg"
                 >

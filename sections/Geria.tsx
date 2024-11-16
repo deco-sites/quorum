@@ -2,6 +2,7 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
 interface ItemProps {
+  /** @title Etiqueta */
   label: string;
   /**
    * @title Cor da etiqueta
@@ -13,18 +14,23 @@ interface ItemProps {
    * @format  color-input
    */
   labelTextColor?: string;
+  /** @title Titulo */
   title: string;
+  /** @title Descrição */
   description: string;
+  /** @title Imagem */
   image: ImageWidget;
 }
 
 export interface Props {
   items?: ItemProps[];
+  /** @title ID da Seção */
+  sectionId?: string;
 }
 
-export default function StickyImageSection({ items = [] }: Props) {
+export default function StickyImageSection({ items = [], sectionId }: Props) {
   return (
-    <>
+    <section id={sectionId}>
       {/* Desktop */}
       <section class="default-container !hidden lg:!flex">
         <div class="flex w-full">
@@ -108,6 +114,6 @@ export default function StickyImageSection({ items = [] }: Props) {
           ))}
         </div>
       </section>
-    </>
+    </section>
   );
 }

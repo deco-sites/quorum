@@ -22,6 +22,7 @@ interface Content {
  * @titleBy alt
  */
 export interface Testimonial {
+  /** @title Conteúdo */
   content?: Content;
 }
 
@@ -39,6 +40,8 @@ export interface Props {
    * @description tempo (em segundos) para acontecer a passagem do item do slide
    */
   interval?: number;
+  /** @title ID da Seção */
+  sectionId?: string;
 }
 
 function SliderItem({ slide, id }: { slide: Testimonial; id: string }) {
@@ -96,42 +99,44 @@ function Dots({ slides }: Props) {
 
 function Carousel(props: Props) {
   const id = useId();
-  const { title, slides, interval } = { ...props };
+  const { title, slides, interval, sectionId } = { ...props };
 
   return (
-    <div
-      id={id}
-      class="default-container bg-secondary lg:rounded-[33px] relative lg:px-[90px] lg:py-[60px] lg:my-32"
-    >
-      <div class="flex flex-col gap-8 lg:gap-10 default-container !py-0">
-        <h2 class="text-3xl font-bold text-center lg:text-left lg:text-4xl text-base-100 self-start w-full">
-          {title}
-        </h2>
-        <Slider
-          class="carousel carousel-center w-full col-span-full row-span-full gap-[38px] z-30"
-          rootId={id}
-          interval={interval && interval * 1e3}
-          infinite
-        >
-          {slides?.map((slide, index) => (
-            <Slider.Item
-              index={index}
-              class="carousel-item lg:w-[calc(50%-19px)] max-w-[498px] w-full"
-            >
-              <SliderItem slide={slide} id={`${id}::${index}`} />
-            </Slider.Item>
-          ))}
-        </Slider>
+    <div id={sectionId}>
+      <div
+        id={id}
+        class="default-container bg-secondary lg:rounded-[33px] relative lg:px-[90px] lg:py-[60px] lg:my-32"
+      >
+        <div class="flex flex-col gap-8 lg:gap-10 default-container !py-0">
+          <h2 class="text-3xl font-bold text-center lg:text-left lg:text-4xl text-base-100 self-start w-full">
+            {title}
+          </h2>
+          <Slider
+            class="carousel carousel-center w-full col-span-full row-span-full gap-[38px] z-30"
+            rootId={id}
+            interval={interval && interval * 1e3}
+            infinite
+          >
+            {slides?.map((slide, index) => (
+              <Slider.Item
+                index={index}
+                class="carousel-item lg:w-[calc(50%-19px)] max-w-[498px] w-full"
+              >
+                <SliderItem slide={slide} id={`${id}::${index}`} />
+              </Slider.Item>
+            ))}
+          </Slider>
 
-        <div class="flex justify-between">
-          {props.dots && <Dots slides={slides} />}
+          <div class="flex justify-between">
+            {props.dots && <Dots slides={slides} />}
+          </div>
+          <Icon
+            id="Apostrophe"
+            width={147}
+            height={125}
+            class="absolute top-10 right-10 hidden lg:block"
+          />
         </div>
-        <Icon
-          id="Apostrophe"
-          width={147}
-          height={125}
-          class="absolute top-10 right-10 hidden lg:block"
-        />
       </div>
     </div>
   );

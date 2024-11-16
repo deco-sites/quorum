@@ -4,27 +4,41 @@ import Slider from "site/components/ui/Slider.tsx";
 import { useId } from "site/sdk/useId.ts";
 
 interface Icon {
+  /** @title Imagem */
   image: ImageWidget;
+  /** @title Largura */
   width?: number;
+  /** @title Altura */
   height?: number;
   alt?: string;
 }
 
 interface ImageItem {
+  /** @title Imagem */
   image: ImageWidget;
+  /** @title Etiqueta */
   label: string;
+  /** @title Ícone da etiqueta */
   labelIcon: Icon;
+  /** @title Ícone da etiqueta quando selecionada */
   selectedLabelIcon: Icon;
 }
 
 interface Props {
+  /** @title Titulo */
   title: string;
   /**
    * @title Image Items
    * @description List of image items with labels
    */
   items?: ImageItem[];
+  /**
+   * @title Índice do item inicial
+   * @description Deve-se informar a posição do item que deve iniciar marcado ao abrir a página, conte a partir do Zero
+   * */
   initialActiveIndex?: number;
+  /** @title ID da Seção */
+  sectionId?: string;
 }
 
 function SliderItem({ slide, id }: { slide: ImageItem; id: string }) {
@@ -58,7 +72,7 @@ function SliderItem({ slide, id }: { slide: ImageItem; id: string }) {
 
 function Dots({ items }: { items: ImageItem[] }) {
   return (
-    <ul class="carousel col-span-full gap-3 z-50 -mt-16">
+    <ul class="carousel col-span-full gap-3 z-40 -mt-16">
       {items?.map((_, index) => (
         <li class="carousel-item">
           <Slider.Dot index={index}>
@@ -76,6 +90,7 @@ export default function ImageCarousel({
   items = [],
   initialActiveIndex = 0,
   title,
+  sectionId,
 }: Props) {
   const totalItems = items.length;
   const oneThird = Math.floor(totalItems / 3);
@@ -107,9 +122,9 @@ export default function ImageCarousel({
   const id = useId();
 
   return (
-    <>
+    <section id={sectionId}>
       {/* Desktop */}
-      <div class="hidden lg:flex flex-col pt-[120px] -mb-[30%] pt-120px">
+      <div class="hidden lg:flex flex-col pt-[120px] -mb-[400px] pt-120px">
         <h2 class="text-[40px] font-extrabold text-center text-primary pb-20">
           {title}
         </h2>
@@ -219,7 +234,7 @@ export default function ImageCarousel({
       {/* Mobile */}
       <div
         id={id}
-        class="flex lg:hidden flex-col pt-[120px] items-center gap-6"
+        class="flex lg:hidden flex-col pt-[120px] items-center gap-6 pb-16"
       >
         <h2 class="text-2xl font-extrabold text-center text-primary">
           {title}
@@ -237,6 +252,6 @@ export default function ImageCarousel({
         </Slider>
         <Dots items={sortedArray} />
       </div>
-    </>
+    </section>
   );
 }

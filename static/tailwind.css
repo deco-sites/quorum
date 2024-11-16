@@ -36,7 +36,7 @@ html,
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-family: "Poppins", sans-serif; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
@@ -3397,6 +3397,15 @@ input.tab:checked + .tab-content,
 .text-center {
   text-align: center;
 }
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}
+.font-sora {
+  font-family: "Sora", sans-serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -3851,9 +3860,9 @@ input.tab:checked + .tab-content,
     margin-right: 143px;
   }
 
-  .lg\:my-32 {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+  .lg\:my-\[120px\] {
+    margin-top: 120px;
+    margin-bottom: 120px;
   }
 
   .lg\:block {
@@ -3954,6 +3963,16 @@ input.tab:checked + .tab-content,
 
   .lg\:rounded-\[33px\] {
     border-radius: 33px;
+  }
+
+  .lg\:\!py-\[120px\] {
+    padding-top: 120px !important;
+    padding-bottom: 120px !important;
+  }
+
+  .lg\:\!py-\[80px\] {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
   }
 
   .lg\:px-12 {

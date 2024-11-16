@@ -53,7 +53,7 @@ function SliderItem({ slide, id }: { slide: Testimonial; id: string }) {
       class="relative overflow-y-hidden w-full min-h-[292px] bg-base-100 rounded-lg p-6 flex"
     >
       <div class="flex flex-col justify-center items-center gap-3 lg:gap-4 h-full max-w-[600px]">
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 font-manrope">
           <Image
             class="object-cover w-14 h-14 rounded-full"
             alt={content?.alt}
@@ -105,7 +105,7 @@ function Carousel(props: Props) {
     <div id={sectionId}>
       <div
         id={id}
-        class="default-container bg-secondary lg:rounded-[33px] relative lg:px-[90px] lg:py-[60px] lg:my-32"
+        class="default-container bg-secondary lg:rounded-[33px] relative lg:px-[90px] lg:py-[60px] lg:my-[120px] font-inter"
       >
         <div class="flex flex-col gap-8 lg:gap-10 default-container !py-0">
           <h2 class="text-3xl font-bold text-center lg:text-left lg:text-4xl text-base-100 self-start w-full">

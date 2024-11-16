@@ -28,7 +28,7 @@ export interface Props {
 
 export default function Features({ cards, label, title, sectionId }: Props) {
   return (
-    <div class="default-container" id={sectionId}>
+    <div class="default-container lg:!py-[120px]" id={sectionId}>
       <div class="flex flex-col gap-10">
         <div class="flex flex-col items-center">
           <span class="bg-secondary rounded-full py-2 px-[18px] text-xs lg:text-base text-base-100">

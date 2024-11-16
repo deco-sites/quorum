@@ -13,7 +13,7 @@ export default function Footer({
       id={sectionId}
       class="w-full flex justify-center py-4 px-7 bg-primary-content"
     >
-      <span class="text-[10px] ">{copyright}</span>
+      <span class="text-[10px] font-sora">{copyright}</span>
     </div>
   );
 }

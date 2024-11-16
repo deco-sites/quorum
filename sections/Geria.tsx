@@ -109,6 +109,7 @@ export default function StickyImageSection({ items = [], sectionId }: Props) {
                 alt={item.label}
                 data-index={index}
                 class="self-center pt-10"
+                loading="eager"
               />
             </div>
           ))}

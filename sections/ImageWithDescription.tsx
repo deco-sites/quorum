@@ -52,7 +52,7 @@ export default function ImageWithDescription({
   sectionId,
 }: Props) {
   return (
-    <div id={sectionId} class="default-container">
+    <div id={sectionId} class="default-container lg:!py-[120px]">
       <div class="flex flex-col items-center gap-8">
         <div
           class={`flex w-full xl:container xl:mx-auto mx-5 md:mx-10 z-10 ${

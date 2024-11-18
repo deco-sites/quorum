@@ -60,6 +60,8 @@ function SliderItem({ slide, id }: { slide: Testimonial; id: string }) {
             src={content?.avatar || ""}
             width={47}
             height={47}
+            loading="lazy"
+            fetchPriority="low"
           />
           <div class="flex flex-col items-start">
             <p class="text-xs lg:text-base text-primary font-bold">

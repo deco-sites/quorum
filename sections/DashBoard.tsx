@@ -60,6 +60,8 @@ function SliderItem({ slide, id }: { slide: ImageItem; id: string }) {
               src={slide.selectedLabelIcon.image}
               alt={slide.selectedLabelIcon.alt}
               class="object-cover"
+              loading="lazy"
+              fetchPriority="low"
             />
             <p class="text-base">{slide.label}</p>
           </button>
@@ -69,6 +71,8 @@ function SliderItem({ slide, id }: { slide: ImageItem; id: string }) {
           src={slide.image}
           width={392}
           height={231}
+          loading="lazy"
+          fetchPriority="low"
         />
       </div>
     </div>
@@ -128,14 +132,14 @@ export default function ImageCarousel({
   const id = useId();
 
   return (
-    <section id={sectionId}>
+    <section class="default-container items-center flex-col" id={sectionId}>
       {/* Desktop */}
-      <div class="hidden lg:flex flex-col pt-[120px] -mb-[400px] pt-120px">
-        <h2 class="text-[40px] font-extrabold text-center text-primary pb-20">
+      <div class="hidden lg:flex flex-col">
+        <h2 class="text-[40px] font-extrabold text-center text-primary pb-24">
           {title}
         </h2>
-        <section class="relative h-screen flex items-center justify-center pt-20">
-          <div class="relative w-full h-full">
+        <section class="relative flex items-center justify-center pt-20 h-[500px]">
+          <div class="relative w-full h-[500px]">
             {items.map((item, index) => (
               <div
                 key={index}
@@ -156,34 +160,34 @@ export default function ImageCarousel({
                   alt={item.label}
                   class="object-cover group-has-[input:checked]:opacity-100 opacity-0 filter drop-shadow-cascade"
                   loading="lazy"
+                  fetchPriority="low"
                 />
               </div>
             ))}
           </div>
-          <div class="absolute w-full h-full flex items-center justify-center">
+          <div class="absolute w-full flex items-center justify-center top-0 h-[500px]">
             {items.map((item, index) => {
               const angle = (index / (totalItems - 1)) * Math.PI - Math.PI;
               let radiusX = 550;
-              let radiusY = 400;
+              let radiusY = 300;
 
               const isFirstOrLast = index === 0 || index === items.length - 1;
 
               if (isFirstOrLast) {
                 radiusX = 400;
-                radiusY = 350;
+                radiusY = 300;
               } else if (index < oneThird) {
                 radiusX = 450;
-                radiusY = 350;
+                radiusY = 300;
               } else if (index >= totalItems - oneThird) {
                 radiusX = 450;
-                radiusY = 350;
+                radiusY = 300;
               }
 
               const x = Math.cos(angle) * radiusX;
               const y = Math.sin(angle) * radiusY;
 
               const offsetX = -100;
-              const offsetY = -100;
 
               return (
                 <label class="group">
@@ -197,9 +201,7 @@ export default function ImageCarousel({
                   <button
                     key={index}
                     class={`absolute flex items-center gap-[10px] px-4 py-[10px] rounded-full transition-all duration-300 bg-accent-content text-secondary group-has-[input:checked]:bg-secondary group-has-[input:checked]:text-base-100`}
-                    style={`transform: translate(${x + offsetX}px, ${
-                      y + offsetY
-                    }px);`}
+                    style={`transform: translate(${x + offsetX}px, ${y}px);`}
                     hx-swap="none"
                     hx-trigger="mouseover"
                     hx-on={`mouseover: 
@@ -220,6 +222,7 @@ export default function ImageCarousel({
                       alt={item.labelIcon.alt}
                       class="object-cover group-has-[input:checked]:hidden"
                       loading="lazy"
+                      fetchPriority="low"
                     />
                     <Image
                       width={item.selectedLabelIcon.width || 21}
@@ -228,6 +231,7 @@ export default function ImageCarousel({
                       alt={item.selectedLabelIcon.alt}
                       class="object-cover hidden group-has-[input:checked]:block"
                       loading="lazy"
+                      fetchPriority="low"
                     />
                     <p class="text-base">{item.label}</p>
                   </button>

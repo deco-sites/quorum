@@ -40,6 +40,8 @@ export default function Benefits({ cards, title, sectionId }: Props) {
                   width={card.width || 47}
                   height={card.height || 47}
                   alt={card.alt}
+                  loading="lazy"
+                  fetchPriority="low"
                 />
               </div>
               <p class="text-center font-xs text-base-100 ">

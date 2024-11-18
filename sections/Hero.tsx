@@ -97,14 +97,15 @@ export default function HeroFlats({
           {image && (
             <div class="w-full lg:max-w-[50%] flex justify-center lg:justify-end">
               <Image
-                width={555}
+                width={544}
+                height={423}
                 class="w-full object-fit max-w-[555px]"
                 sizes="(max-width: 640px) 100vw, 30vw"
                 src={image}
                 alt={image}
-                decoding="async"
-                loading="lazy"
-                fit="contain"
+                preload
+                loading="eager"
+                fetchPriority="high"
               />
             </div>
           )}

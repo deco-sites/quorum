@@ -10,11 +10,21 @@ export interface Link {
    * @description Para usar o 'Scroll to' passe o valor com um # seguido do ID da section (ex: #id-section)
    * */
   url?: string;
+  openOnNewTab?: boolean;
+}
+
+export interface CTA {
+  id?: string;
+  href: string;
+  text: string;
+  openOnNewTab?: boolean;
 }
 
 interface Nav {
   /** @title Links */
   links: Link[];
+  /** @title Botões */
+  buttons: CTA[];
 }
 
 export interface Props {
@@ -39,6 +49,7 @@ export default function Header({
       { label: "Princing", url: "/" },
       { label: "Contact", url: "/" },
     ],
+    buttons: [],
   },
 }: Props) {
   return (
@@ -64,11 +75,25 @@ export default function Header({
                 <a
                   href={link.url}
                   aria-label={link.label}
+                  target={link.openOnNewTab ? "_blank" : "_self"}
                   class="link no-underline hover:underline p-4 text-secondary group-first:font-bold text-lg"
                 >
                   {link.label}
                 </a>
               </li>
+            ))}
+          </ul>
+          <ul class="flex gap-3">
+            {navigation.buttons?.map((item) => (
+              <a
+                key={item?.id}
+                id={item?.id}
+                href={item?.href}
+                target={item.openOnNewTab ? "_blank" : "_self"}
+                class={`bg-secondary text-base-300 rounded-full text-xs lg:text-lg py-1.5 px-3 lg:py-2 lg:px-6`}
+              >
+                {item?.text}
+              </a>
             ))}
           </ul>
         </div>
@@ -90,7 +115,7 @@ export default function Header({
           class="drawer-overlay"
         />
 
-        <div class="flex flex-col gap-8 min-h-full w-80 max-w-[80vw] bg-neutral text-base-content">
+        <div class="flex flex-col gap-2 min-h-full w-80 max-w-[80vw] bg-neutral text-base-content">
           <a class="p-4" href="/">
             <Image src={logo.src || ""} width={98} height={23} alt={logo.alt} />
           </a>
@@ -100,6 +125,7 @@ export default function Header({
               <li class="group">
                 <a
                   href={link.url}
+                  target={link.openOnNewTab ? "_blank" : "_self"}
                   hx-on:click={`
                   const input = document.getElementById('mobile-drawer-nav')
 
@@ -113,6 +139,19 @@ export default function Header({
                   {link.label}
                 </a>
               </li>
+            ))}
+          </ul>
+          <ul class="p-4 flex items-center gap-3">
+            {navigation.buttons?.map((item) => (
+              <a
+                key={item?.id}
+                id={item?.id}
+                href={item?.href}
+                target={item.openOnNewTab ? "_blank" : "_self"}
+                class={`bg-secondary text-base-300 rounded-full py-3 px-6`}
+              >
+                {item?.text}
+              </a>
             ))}
           </ul>
         </div>

@@ -37,6 +37,11 @@ interface Props {
    * @description Deve-se informar a posição do item que deve iniciar marcado ao abrir a página, conte a partir do Zero
    * */
   initialActiveIndex?: number;
+  /**
+   * @title Intervalo do Carrousel Mobile
+   * @description tempo (em segundos) para acontecer a passagem do item do slide
+   */
+  mobileSliderInterval?: number;
   /** @title ID da Seção */
   sectionId?: string;
 }
@@ -91,6 +96,7 @@ export default function ImageCarousel({
   initialActiveIndex = 0,
   title,
   sectionId,
+  mobileSliderInterval,
 }: Props) {
   const totalItems = items.length;
   const oneThird = Math.floor(totalItems / 3);
@@ -240,9 +246,10 @@ export default function ImageCarousel({
           {title}
         </h2>
         <Slider
-          class="carousel carousel-center w-full col-span-full gap-[38px] z-30 items-start h-[380px]"
+          class="carousel carousel-center w-full col-span-full gap-[38px] z-30 items-start h-[380px] overflow-y-hidden"
           rootId={id}
           infinite
+          interval={mobileSliderInterval}
         >
           {sortedArray?.map((slide, index) => (
             <Slider.Item index={index} class="carousel-item w-full ">

@@ -32,7 +32,7 @@ export default function StickyImageSection({ items = [], sectionId }: Props) {
   return (
     <section id={sectionId}>
       {/* Desktop */}
-      <section class="default-container !hidden lg:!flex">
+      <section class="default-container !hidden lg:!flex lg:pt-0">
         <div class="flex w-full">
           <div class="w-1/2 sticky top-0 h-screen">
             <div class="relative w-full h-full flex items-center justify-center">
@@ -43,10 +43,12 @@ export default function StickyImageSection({ items = [], sectionId }: Props) {
                   key={index}
                   src={item.image}
                   alt={item.label}
-                  class={`absolute inset-0 object-cover transition-opacity duration-300 ${
+                  class={`absolute inset-0 transition-opacity duration-300 ${
                     index === 0 ? "opacity-1" : "opacity-0"
                   } top-0 left-0 bottom-0 my-auto`}
                   data-index={index}
+                  loading="lazy"
+                  fetchPriority="low"
                 />
               ))}
             </div>
@@ -109,7 +111,8 @@ export default function StickyImageSection({ items = [], sectionId }: Props) {
                 alt={item.label}
                 data-index={index}
                 class="self-center pt-10"
-                loading="eager"
+                loading="lazy"
+                fetchPriority="low"
               />
             </div>
           ))}

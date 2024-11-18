@@ -23,7 +23,13 @@
         "url": "#depoimentos"
       }
     ],
-    "buttons": []
+    "buttons": [
+      {
+        "href": "#",
+        "text": "Login",
+        "openOnNewTab": true
+      }
+    ]
   },
   "logo": {
     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/46316b91-d569-404a-b52e-1babd555037e/LOGOCOMPLETA-SEMFUNDO.svg"

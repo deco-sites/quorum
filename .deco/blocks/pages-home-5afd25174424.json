@@ -9,7 +9,7 @@
       "__resolveType": "site/sections/Hero.tsx",
       "title": "Monitoramento de pacientes em tempo real",
       "sectionId": "home",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a98a8a47-047d-4dab-afc9-aec7e09f9720/HERO-IMAGE.svg",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/5b58919b-d247-486c-9000-f9010290fb61/HERO-IMAGE.png",
       "headline": "Transforme a maneira de cuidar",
       "description": "Simplifique o acompanhamento de pacientes e a organização de escalas, tudo em tempo real com a nossa IA integrada ao WhatsApp",
       "cta": {
@@ -18,143 +18,140 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/DashBoard.tsx",
-        "items": [
-          {
-            "label": "Perfil do profissional",
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/93adbc8d-b9ed-47a5-a8ce-d39870ea96c1/Perfil-do-profissional.svg",
-            "labelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/6fe99434-fb3e-4468-981d-87334abc6528/Vector-(6).svg",
-              "width": 20,
-              "height": 20,
-              "alt": "icon"
-            },
-            "selectedLabelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/b24db4ee-5a58-4e67-bb35-2a437d564222/Vector-1.svg",
-              "width": 20,
-              "height": 20,
-              "alt": "icon"
-            }
+      "__resolveType": "site/sections/DashBoard.tsx",
+      "items": [
+        {
+          "label": "Perfil do profissional",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/93adbc8d-b9ed-47a5-a8ce-d39870ea96c1/Perfil-do-profissional.svg",
+          "labelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/6fe99434-fb3e-4468-981d-87334abc6528/Vector-(6).svg",
+            "width": 20,
+            "height": 20,
+            "alt": "icon"
           },
-          {
-            "label": "Lista de profissionais",
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/4101d7c8-9598-4ef6-862f-1f2fb9ca2832/Lista-de-profissionais.svg",
-            "labelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/976317cb-026f-4681-ba35-bff9046f06c1/Vector-4.svg",
-              "width": 19,
-              "height": 19,
-              "alt": "icon"
-            },
-            "selectedLabelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/0a846694-4a56-4bba-a5ae-92d1fbe60513/Vector-(7).svg",
-              "width": 19,
-              "height": 19,
-              "alt": "icon"
-            }
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/4101d7c8-9598-4ef6-862f-1f2fb9ca2832/Lista-de-profissionais.svg",
-            "label": "Gestão de escala",
-            "labelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/20b14ea4-3d72-4fd5-8448-ab363c9e0419/Group.svg",
-              "width": 18,
-              "height": 18,
-              "alt": "icon"
-            },
-            "selectedLabelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/e931a599-d652-45a8-bfd3-cf83806f3af7/Group-(2).svg",
-              "width": 18,
-              "height": 18,
-              "alt": "icon"
-            }
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/09be35c0-105f-4312-b859-b22a4c30024f/Inicio.svg",
-            "label": "Início",
-            "labelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/d07a6524-5c1d-48a6-a8eb-4ea5b8bee8ad/Vector-2.svg",
-              "width": 15,
-              "height": 15,
-              "alt": "icon"
-            },
-            "selectedLabelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/6c451ebb-2132-48ba-a462-7229313a31c7/Vector-(10).svg",
-              "width": 15,
-              "height": 15,
-              "alt": "icon"
-            }
-          },
-          {
-            "label": "Alertas de saúde",
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/4b96ae13-effd-485e-871f-3894447a56c1/Alertas-de-saude.svg",
-            "labelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/f662b1bd-3718-463a-9a5e-0cf778606dd8/Group-196.svg",
-              "width": 21,
-              "height": 19,
-              "alt": "icon"
-            },
-            "selectedLabelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/bdb57321-5ae9-4cca-b331-16ec99125179/Group-196-(1234).svg",
-              "width": 21,
-              "height": 119,
-              "alt": "icon"
-            }
-          },
-          {
-            "labelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/59b77da5-fbe3-4675-b16c-b5244f97b502/Vector-3.svg",
-              "width": 21,
-              "height": 20,
-              "alt": "icon"
-            },
-            "selectedLabelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/1e0671f7-ed09-4e6e-9a21-c4f50ee41204/Vector-(9).svg",
-              "width": 21,
-              "height": 20,
-              "alt": "icon"
-            },
-            "label": "Lista de pacientes",
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/ba10fad4-803a-4e67-9d44-fa0c60e2bbf5/Lista-de-pacientes.svg"
-          },
-          {
-            "labelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/9b7c4b96-5a75-4211-94a6-3862ef3d9f46/Vector.svg",
-              "width": 19,
-              "height": 17,
-              "alt": "icon"
-            },
-            "selectedLabelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/1c3599a8-95b2-4a02-969e-3b395e9ff481/Vector-(8).svg",
-              "width": 19,
-              "height": 17,
-              "alt": "icon"
-            },
-            "label": "Perfil do paciente",
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/3ac54b4f-804d-42f6-8306-a62fd90bd6d6/Perfil-do-paciente.svg"
-          },
-          {
-            "labelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/b3c3ccc6-ac19-48bd-a4de-d9683b53498e/Group-1.svg",
-              "width": 12,
-              "height": 17,
-              "alt": "icon"
-            },
-            "selectedLabelIcon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a63941e5-9562-4803-9959-87bb5f0708a9/Group-(1).svg",
-              "width": 12,
-              "height": 17,
-              "alt": "icon"
-            },
-            "label": "Exames",
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/23b8a8d9-f6dc-4548-907a-0fd7bde2a27e/Exames.svg"
+          "selectedLabelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/b24db4ee-5a58-4e67-bb35-2a437d564222/Vector-1.svg",
+            "width": 20,
+            "height": 20,
+            "alt": "icon"
           }
-        ],
-        "sectionId": "dashboard",
-        "initialActiveIndex": 3,
-        "title": "Transforme dados em ações "
-      }
+        },
+        {
+          "label": "Lista de profissionais",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/4101d7c8-9598-4ef6-862f-1f2fb9ca2832/Lista-de-profissionais.svg",
+          "labelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/976317cb-026f-4681-ba35-bff9046f06c1/Vector-4.svg",
+            "width": 19,
+            "height": 19,
+            "alt": "icon"
+          },
+          "selectedLabelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/0a846694-4a56-4bba-a5ae-92d1fbe60513/Vector-(7).svg",
+            "width": 19,
+            "height": 19,
+            "alt": "icon"
+          }
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/4101d7c8-9598-4ef6-862f-1f2fb9ca2832/Lista-de-profissionais.svg",
+          "label": "Gestão de escala",
+          "labelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/20b14ea4-3d72-4fd5-8448-ab363c9e0419/Group.svg",
+            "width": 18,
+            "height": 18,
+            "alt": "icon"
+          },
+          "selectedLabelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/e931a599-d652-45a8-bfd3-cf83806f3af7/Group-(2).svg",
+            "width": 18,
+            "height": 18,
+            "alt": "icon"
+          }
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/09be35c0-105f-4312-b859-b22a4c30024f/Inicio.svg",
+          "label": "Início",
+          "labelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/d07a6524-5c1d-48a6-a8eb-4ea5b8bee8ad/Vector-2.svg",
+            "width": 15,
+            "height": 15,
+            "alt": "icon"
+          },
+          "selectedLabelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/6c451ebb-2132-48ba-a462-7229313a31c7/Vector-(10).svg",
+            "width": 15,
+            "height": 15,
+            "alt": "icon"
+          }
+        },
+        {
+          "label": "Alertas de saúde",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/4b96ae13-effd-485e-871f-3894447a56c1/Alertas-de-saude.svg",
+          "labelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/f662b1bd-3718-463a-9a5e-0cf778606dd8/Group-196.svg",
+            "width": 21,
+            "height": 19,
+            "alt": "icon"
+          },
+          "selectedLabelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/bdb57321-5ae9-4cca-b331-16ec99125179/Group-196-(1234).svg",
+            "width": 21,
+            "height": 119,
+            "alt": "icon"
+          }
+        },
+        {
+          "labelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/59b77da5-fbe3-4675-b16c-b5244f97b502/Vector-3.svg",
+            "width": 21,
+            "height": 20,
+            "alt": "icon"
+          },
+          "selectedLabelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/1e0671f7-ed09-4e6e-9a21-c4f50ee41204/Vector-(9).svg",
+            "width": 21,
+            "height": 20,
+            "alt": "icon"
+          },
+          "label": "Lista de pacientes",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/ba10fad4-803a-4e67-9d44-fa0c60e2bbf5/Lista-de-pacientes.svg"
+        },
+        {
+          "labelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/9b7c4b96-5a75-4211-94a6-3862ef3d9f46/Vector.svg",
+            "width": 19,
+            "height": 17,
+            "alt": "icon"
+          },
+          "selectedLabelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/1c3599a8-95b2-4a02-969e-3b395e9ff481/Vector-(8).svg",
+            "width": 19,
+            "height": 17,
+            "alt": "icon"
+          },
+          "label": "Perfil do paciente",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/3ac54b4f-804d-42f6-8306-a62fd90bd6d6/Perfil-do-paciente.svg"
+        },
+        {
+          "labelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/b3c3ccc6-ac19-48bd-a4de-d9683b53498e/Group-1.svg",
+            "width": 12,
+            "height": 17,
+            "alt": "icon"
+          },
+          "selectedLabelIcon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a63941e5-9562-4803-9959-87bb5f0708a9/Group-(1).svg",
+            "width": 12,
+            "height": 17,
+            "alt": "icon"
+          },
+          "label": "Exames",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/23b8a8d9-f6dc-4548-907a-0fd7bde2a27e/Exames.svg"
+        }
+      ],
+      "sectionId": "dashboard",
+      "initialActiveIndex": 3,
+      "title": "Transforme dados em ações "
     },
     {
       "__resolveType": "site/sections/Geria.tsx",

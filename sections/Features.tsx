@@ -34,14 +34,14 @@ export default function Features({ cards, label, title, sectionId }: Props) {
           <span class="bg-secondary rounded-full py-2 px-[18px] text-xs lg:text-base text-base-100">
             {label}
           </span>
-          <h3 class="text-2xl font-bold text-center lg:text-[40px] mt-[10px] text-primary-content lg:leading-normal max-w-[879px]">
+          <h3 class="text-2xl font-bold text-center lg:text-[40px] mt-2.5 text-primary-content lg:leading-normal max-w-[879px]">
             {title}
           </h3>
         </div>
         <div class="flex flex-col gap-6 lg:flex-row">
           {cards.map((card) => (
             <div class="bg-base-100 rounded-3xl py-6 px-7 flex flex-col items-center lg:flex-1 gap-3">
-              <div class="rounded-full w-[68px] h-[68px] bg-secondary flex items-center justify-center">
+              <div class="rounded-full w-16 h-16 bg-secondary flex items-center justify-center">
                 <Image
                   src={card.icon}
                   width={card.width || 37}

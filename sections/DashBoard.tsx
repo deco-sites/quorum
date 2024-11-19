@@ -52,7 +52,7 @@ function SliderItem({ slide, id }: { slide: ImageItem; id: string }) {
       <div class="flex flex-col items-center gap-5">
         <label class="group">
           <button
-            class={`flex items-center gap-[10px] px-4 py-[10px] rounded-full transition-all duration-300 bg-secondary text-base-100`}
+            class={`flex items-center gap-2.5 px-4 py-2.5 rounded-full transition-all duration-300 bg-secondary text-base-100`}
           >
             <Image
               width={slide.selectedLabelIcon.width || 21}
@@ -200,7 +200,7 @@ export default function ImageCarousel({
                   />
                   <button
                     key={index}
-                    class={`absolute flex items-center gap-[10px] px-4 py-[10px] rounded-full transition-all duration-300 bg-accent-content text-secondary group-has-[input:checked]:bg-secondary group-has-[input:checked]:text-base-100`}
+                    class={`absolute flex items-center gap-2.5 px-4 py-2.5 rounded-full transition-all duration-300 bg-accent-content text-secondary group-has-[input:checked]:bg-secondary group-has-[input:checked]:text-base-100`}
                     style={`transform: translate(${x + offsetX}px, ${y}px);`}
                     hx-swap="none"
                     hx-trigger="mouseover"

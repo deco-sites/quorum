@@ -2679,11 +2679,11 @@ input.tab:checked + .tab-content,
 .mt-2 {
   margin-top: 0.5rem;
 }
+.mt-2\.5 {
+  margin-top: 0.625rem;
+}
 .mt-4 {
   margin-top: 1rem;
-}
-.mt-\[10px\] {
-  margin-top: 10px;
 }
 .mt-\[5px\] {
   margin-top: 5px;
@@ -2714,6 +2714,9 @@ input.tab:checked + .tab-content,
 }
 .h-14 {
   height: 3.5rem;
+}
+.h-16 {
+  height: 4rem;
 }
 .h-2 {
   height: 0.5rem;
@@ -2792,6 +2795,9 @@ input.tab:checked + .tab-content,
 }
 .w-14 {
   width: 3.5rem;
+}
+.w-16 {
+  width: 4rem;
 }
 .w-2 {
   width: 0.5rem;
@@ -3012,6 +3018,9 @@ input.tab:checked + .tab-content,
 .gap-2 {
   gap: 0.5rem;
 }
+.gap-2\.5 {
+  gap: 0.625rem;
+}
 .gap-3 {
   gap: 0.75rem;
 }
@@ -3027,8 +3036,8 @@ input.tab:checked + .tab-content,
 .gap-8 {
   gap: 2rem;
 }
-.gap-\[10px\] {
-  gap: 10px;
+.gap-9 {
+  gap: 2.25rem;
 }
 .gap-\[16px\] {
   gap: 16px;
@@ -3282,6 +3291,10 @@ input.tab:checked + .tab-content,
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -3306,10 +3319,6 @@ input.tab:checked + .tab-content,
   padding-left: 18px;
   padding-right: 18px;
 }
-.px-\[22px\] {
-  padding-left: 22px;
-  padding-right: 22px;
-}
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -3322,6 +3331,10 @@ input.tab:checked + .tab-content,
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -3333,14 +3346,6 @@ input.tab:checked + .tab-content,
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-.py-\[10px\] {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.py-\[9px\] {
-  padding-top: 9px;
-  padding-bottom: 9px;
 }
 .pb-1 {
   padding-bottom: 0.25rem;
@@ -3974,9 +3979,9 @@ input.tab:checked + .tab-content,
     border-radius: 33px;
   }
 
-  .lg\:\!py-\[80px\] {
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
+  .lg\:\!py-20 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
   }
 
   .lg\:px-12 {
@@ -3984,14 +3989,19 @@ input.tab:checked + .tab-content,
     padding-right: 3rem;
   }
 
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .lg\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
-  .lg\:px-\[90px\] {
-    padding-left: 90px;
-    padding-right: 90px;
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .lg\:py-2 {
@@ -4002,11 +4012,6 @@ input.tab:checked + .tab-content,
   .lg\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .lg\:py-\[60px\] {
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   .lg\:pb-12 {
@@ -4031,6 +4036,11 @@ input.tab:checked + .tab-content,
     line-height: 2.5rem;
   }
 
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .lg\:text-\[21px\] {
     font-size: 21px;
   }
@@ -4041,10 +4051,6 @@ input.tab:checked + .tab-content,
 
   .lg\:text-\[40px\] {
     font-size: 40px;
-  }
-
-  .lg\:text-\[64px\] {
-    font-size: 64px;
   }
 
   .lg\:text-base {

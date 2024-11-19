@@ -29,7 +29,7 @@ export interface Props {
   /**
    * @title Imagem
    */
-  image?: ImageWidget;
+  image: ImageWidget;
   /**
    * @title Posição da imagem
    */
@@ -60,11 +60,7 @@ export default function HeroFlats({
     <div id={sectionId} class="default-container">
       <div class="flex flex-col items-center gap-8">
         <div
-          class={`flex w-full xl:container xl:mx-auto mx-5 md:mx-10 z-10 ${
-            image
-              ? PLACEMENT[placement]
-              : "flex-col items-center justify-center text-center"
-          } gap-2 lg:gap-5 justify-between items-center`}
+          class={`flex w-full xl:container xl:mx-auto mx-5 md:mx-10 z-10 ${PLACEMENT[placement]} gap-2 lg:gap-5 justify-between items-center`}
         >
           <div
             class={`w-full ${
@@ -74,7 +70,7 @@ export default function HeroFlats({
             }`}
           >
             <p class="text-warning font-semibold pb-4">{headline}</p>
-            <h1 class="text-[40px] lg:text-[64px] font-bold text-primary pb-5">
+            <h1 class="text-[40px] lg:text-6xl font-bold text-primary pb-5">
               {title}
             </h1>
             <p class="leading-[150%] text-base-200 text-sm lg:text-xl pb-6">
@@ -94,21 +90,19 @@ export default function HeroFlats({
               )}
             </div>
           </div>
-          {image && (
-            <div class="w-full lg:max-w-[50%] flex justify-center lg:justify-end">
-              <Image
-                width={544}
-                height={423}
-                class="w-full object-fit max-w-[555px]"
-                sizes="(max-width: 640px) 100vw, 30vw"
-                src={image}
-                alt={image}
-                preload
-                loading="eager"
-                fetchPriority="high"
-              />
-            </div>
-          )}
+          <div class="w-full lg:max-w-[50%] flex justify-center lg:justify-end">
+            <Image
+              width={544}
+              height={423}
+              class="w-full object-fit max-w-[555px]"
+              sizes="(max-width: 640px) 100vw, 30vw"
+              src={image}
+              alt={image}
+              preload
+              loading="eager"
+              fetchPriority="high"
+            />
+          </div>
         </div>
       </div>
     </div>

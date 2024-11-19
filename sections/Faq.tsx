@@ -85,7 +85,7 @@ export default function FAQ({
               {description}
             </p>
           </div>
-          <div class="flex flex-col gap-[10px] flex-grow max-w-[418px]">
+          <div class="flex flex-col gap-2.5 flex-grow max-w-[418px]">
             {questions?.map((question, index) => (
               <div class="group bg-secondary text-secondary-content py-3 px-4 rounded-lg w-full transition-all duration-200">
                 <div class="w-full" hx-on:click={useScript(onClick, index)}>

@@ -14,7 +14,7 @@
       "description": "Simplifique o acompanhamento de pacientes e a organização de escalas, tudo em tempo real com a nossa IA integrada ao WhatsApp",
       "cta": {
         "text": "Veja como funciona",
-        "href": "#"
+        "href": "https://calendly.com/m-rosa-quorumsaude/demonstracao"
       }
     },
     {
@@ -231,8 +231,9 @@
       "description": "Se você quer otimizar a eficiência operacional e elevar a qualidade dos cuidados, estamos aqui para fazer a diferença ",
       "cta": {
         "text": "Agendar Reunião",
-        "href": "#"
-      }
+        "href": "https://calendly.com/m-rosa-quorumsaude/demonstracao"
+      },
+      "sectionId": "agendar"
     },
     {
       "__resolveType": "site/sections/Benefits.tsx",

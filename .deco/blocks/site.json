@@ -1,11 +1,11 @@
 {
   "seo": {
     "type": "website",
-    "title": "Landing",
+    "title": "Quorum Home",
     "jsonLDs": [],
     "noIndexing": false,
     "description": "Revolucionando o cuidado extra-hospitalar",
-    "titleTemplate": "Quorum",
+    "titleTemplate": "Quorum | Revolucionando o cuidado extra-hospitalar",
     "favicon": {
       "__resolveType": "website/flags/multivariate/image.ts",
       "variants": [

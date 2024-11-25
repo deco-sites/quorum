@@ -90,7 +90,7 @@ export default function Header({
         {/* main content */}
         <div
           id="stickyElement"
-          class="fixed top-0 bg-neutral z-50 w-full pb-4 transition-transform duration-200 ease-in-out"
+          class="fixed top-0 bg-neutral z-50 w-full pb-4 transition-transform duration-200 ease-in-out shadow-sm"
           data-last-scroll="0"
         >
           <div class="drawer-content container xl:px-0 px-4 flex gap-8 items-center justify-between pt-10 w-full">

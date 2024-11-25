@@ -2555,6 +2555,9 @@ input.tab:checked + .tab-content,
 .static {
   position: static;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -2720,6 +2723,9 @@ input.tab:checked + .tab-content,
 }
 .h-2 {
   height: 0.5rem;
+}
+.h-24 {
+  height: 6rem;
 }
 .h-\[10px\] {
   height: 10px;
@@ -3626,11 +3632,19 @@ input.tab:checked + .tab-content,
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-200 {
   transition-duration: 200ms;
 }
 .duration-300 {
   transition-duration: 300ms;
+}
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /** Remove scrollbar from overflow-auto */
 
@@ -3893,6 +3907,10 @@ input.tab:checked + .tab-content,
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-20 {
+    height: 5rem;
   }
 
   .lg\:max-h-\[600px\] {

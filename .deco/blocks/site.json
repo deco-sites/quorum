@@ -6,7 +6,17 @@
     "noIndexing": false,
     "description": "Revolucionando o cuidado extra-hospitalar",
     "titleTemplate": "Quorum",
-    "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/80636bb4-4916-4387-85bd-f9f00ed7daf8/Prancheta-4.png",
+    "favicon": {
+      "__resolveType": "website/flags/multivariate/image.ts",
+      "variants": [
+        {
+          "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/80636bb4-4916-4387-85bd-f9f00ed7daf8/Prancheta-4.png",
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
     "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a4f6e6d3-850d-418c-add0-896d4c7cca87/Prancheta-1-(2).png",
     "descriptionTemplate": "%s"
   },

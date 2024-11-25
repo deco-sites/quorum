@@ -4,11 +4,11 @@
     "title": "Landing",
     "jsonLDs": [],
     "noIndexing": false,
-    "description": "Improve your page performance with deco.cx",
-    "titleTemplate": "Landing | deco.cx",
-    "descriptionTemplate": "%s | Deco.cx",
+    "description": "Revolucionando o cuidado extra-hospitalar",
+    "titleTemplate": "Quorum",
     "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/0fba8a8c-ee79-47e1-8f9d-863658d056cc",
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/1350f37f-88ab-4cf1-bcf6-c386bcf8b238"
+    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a4f6e6d3-850d-418c-add0-896d4c7cca87/Prancheta-1-(2).png",
+    "descriptionTemplate": "%s"
   },
   "global": [
     {

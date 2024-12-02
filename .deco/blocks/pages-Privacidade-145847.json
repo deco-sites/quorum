@@ -1,0 +1,18 @@
+{
+  "name": "Privacidade",
+  "path": "/privacidade",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ImageWithDescription.tsx",
+        "title": "Política de Privacidade",
+        "description": "1. Introdução Bem-vindo à GeriAI da GERAI TECNOLOGIA LTDA, inscrita no CNPJ nº 55.440.780/0001-82 (\"nós\", \"nosso\"), acessível pelo WhatsApp. A sua privacidade é muito importante para nós. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas informações pessoais quando você usa nosso chatbot para coletar dados de saúde sobre pacientes.  2. Informações que Coletamos Podemos coletar e processar os seguintes dados pessoais:  Informações de Identificação Pessoal do Cuidador: Nome, número de telefone, etc. Dados de Saúde do Paciente: Informações sobre o estado de saúde, hábitos diários, medicações, sintomas, etc. Dados de Uso: Informações sobre como você utiliza o chatbot. 3. Uso das Informações Usamos as informações coletadas para:  Fornecer e melhorar nossos serviços de monitoramento de saúde. Facilitar a comunicação entre cuidadores e profissionais de saúde. Analisar os dados de saúde para melhorar o cuidado ao paciente. Cumprir com obrigações legais e regulatórias. 4. Compartilhamento de Informações Não vendemos, trocamos ou transferimos suas informações pessoais para terceiros sem seu consentimento, exceto para:  Profissionais de saúde que participam do cuidado do paciente. Fornecedores de serviços que nos auxiliam na operação do chatbot. Cumprir com a lei, regulamento ou ordem judicial. 5. Segurança das Informações Implementamos medidas de segurança adequadas para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição.  6. Seus Direitos Você tem o direito de:  Acessar suas informações pessoais e as informações coletadas sobre o paciente. Solicitar correção de dados incorretos ou incompletos. Solicitar a exclusão de suas informações pessoais. Optar por não participar do uso do chatbot. 7. Cookies e Dados de Rastreamento Embora o WhatsApp não utilize cookies tradicionais, podemos utilizar identificadores semelhantes para melhorar a funcionalidade e a experiência do usuário.  8. Alterações nesta Política de Privacidade Podemos atualizar nossa Política de Privacidade periodicamente. Quaisquer alterações serão publicadas nesta página com a nova data de revisão.  9. Contato Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco:  Email: m.rosa@quorumsaude.com"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

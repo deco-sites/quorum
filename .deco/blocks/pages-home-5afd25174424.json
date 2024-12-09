@@ -162,14 +162,14 @@
           "labelColor": "#2C4A99",
           "title": "Conheça a Geria",
           "description": "A Geria é a parceira ideal para os plantões: uma assistente digital integrada aos mais avançados modelos de inteligência artificial, disponível via WhatsApp para otimizar e transformar o cuidado domiciliar",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/1ae0732f-33ac-4610-a5f2-942b1a19c780/Geria.svg"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/d0fca2eb-44ed-450b-b736-af5e935fb801/Geria.png"
         },
         {
           "label": "Bloco de notas",
           "labelColor": "#FABD07",
           "title": "Digitalize o diário de plantão",
           "description": "A profissional pode registrar qualquer informação do plantão diretamente pelo WhatsApp, inclusive por áudios, que são transcritos e resumidos automaticamente pela nossa IA",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/628328f3-d724-4b3a-b80b-2bbdfb65dba8/Bloco-de-notas.svg",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/ea95cf54-f2d0-4aa2-9b77-f334383b999f/Bloco-de-notas.png",
           "labelTextColor": "#000000"
         },
         {
@@ -177,21 +177,21 @@
           "labelColor": "#1D2A4C",
           "title": "Automatize a gestão de escala",
           "description": "Com nossos lembretes, as profissionais atualizam a presença no plantão de forma automática, mantendo você sempre informado e sem a necessidade de intervenções manuais",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/acdc2c65-4c3e-43dd-952f-b227aec1332d/Confirmacao-de-plantao.svg"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/07913fe8-4a69-4aa0-bc9c-f3a53fcda256/Confirmacao-de-plantao.png"
         },
         {
           "label": "Relatório",
           "labelColor": "#F18D19",
           "title": "Sem áudios longos",
           "description": "Ao final da escala, a Geria reúne todas as informações, solicita detalhes sobre possíveis alterações e gera um resumo completo do plantão",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/9ea2649e-b652-4c2a-8b95-82a30d0f40b2/Relatorio.svg"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/a5d4f87d-5061-4417-8ae0-18dd2e863e69/Relatorio.png"
         },
         {
           "label": "Lembretes",
           "labelColor": "#3A8DCC",
           "title": "Assegure a rotina do paciente",
           "description": "Transformamos o planejamento do cuidado e a rotina do paciente em lembretes personalizados, enviados de forma programada, ajudando a profissional a seguir o plano de cuidado sem preocupações",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/36e7ad4f-7597-495f-b6af-358ae8857309/Lembretes.svg"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/quorum/fd3b385e-e135-4503-a90f-d856e28534e9/Lembretes.png"
         }
       ]
     },
